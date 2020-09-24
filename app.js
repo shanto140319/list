@@ -257,11 +257,17 @@ darkBtn.addEventListener('click',function(){
     form.classList.toggle("dark-mode2")
     sectionCenter.classList.toggle("dark-mode");
     darkBtn.classList.toggle("dark-mode");
-    if(document.body.className === "dark-mode"){
-        changeText("switch light mode");
+    if(darkBtn.textContent == "L"){
+        darkBtn.textContent = "D";
     }
     else{
-        changeText("switch dark mode");
+        darkBtn.textContent = "L";
+    }
+    if(document.body.className === "dark-mode"){
+        changeText("'switch light mode'");
+    }
+    else{
+        changeText("'switch dark mode'");
     }
 
 })
