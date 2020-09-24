@@ -174,10 +174,59 @@ function createListItem(id,value){
             <i class="fas fa-trash"></i>
           </button>
         </div>`;
+        const title = element.querySelector(".title");
+        darkBtn.addEventListener('click',function(){
+            title.classList.toggle("dark-mode2");
+        })
         const deleteBtn = element.querySelector('.delete-btn');
         const editBtn = element.querySelector('.edit-btn');
         deleteBtn.addEventListener('click',deleteItem);
         editBtn.addEventListener('click',editItem);
         //append child
         list.appendChild(element);
+}
+
+//auto write text
+const text = "learning JavaScript is Fun!...";
+const write = document.querySelector(".write-text")
+let idx = 0;
+function writeText(){
+    write.innerHTML = text.slice(0,idx);
+    idx++;
+
+    if(idx > text.length - 1){
+        idx = 0;
+    }
+
+}
+setInterval(writeText, 100);
+
+
+// for dark mode
+
+function isOdd(value) {
+	if (value%2 !== 0)
+		return true;
+	else
+		return false;
+}
+const darkText = document.querySelector(".small");
+const sectionCenter = document.querySelector(".section-center");
+const darkBtn = document.querySelector(".dark");
+darkBtn.addEventListener('click',function(){
+    document.body.classList.toggle("dark-mode");
+    form.classList.toggle("dark-mode2")
+    sectionCenter.classList.toggle("dark-mode");
+    darkBtn.classList.toggle("dark-mode");
+    if(document.body.className === "dark-mode"){
+        changeText("switch light mode");
+    }
+    else{
+        changeText("switch dark mode");
+    }
+
+})
+
+function changeText(text){
+    darkText.innerHTML = text;
 }
