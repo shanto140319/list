@@ -202,19 +202,19 @@ function createListItem(id,value){
         }
         const title =  element.querySelector('.title');
         if(title.className === "title d"){
-            title.style.color = "#fff";
+            title.style.color = "#1fd415";
         }
         else{
-            title.style.color = "#0cff08";
+            title.style.color = "#222";
         }
 
         darkBtn.addEventListener('click',function(){
             title.classList.toggle("d");
             if(title.className === "title d"){
-                title.style.color = "#fff";
+                title.style.color = "#1fd415";
             }
             else{
-                title.style.color = "#0cff08";
+                title.style.color = "#222";
             }
         })
         const deleteBtn = element.querySelector('.delete-btn');
