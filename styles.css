@@ -374,8 +374,8 @@ Grocery List
   letter-spacing: .2rem;
 }
 .dark{
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   background: #222;
   border-radius: 50%;
   display: flex;
@@ -385,7 +385,7 @@ Grocery List
   justify-content: center;
   align-items: center;
   margin-right: .4rem;
- 
+ cursor: pointer;
   border: none;
 }
 .dark.dark-mode{
