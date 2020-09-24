@@ -174,10 +174,7 @@ function createListItem(id,value){
             <i class="fas fa-trash"></i>
           </button>
         </div>`;
-        const title = element.querySelector(".title");
-        darkBtn.addEventListener('click',function(){
-            title.classList.toggle("dark-mode2");
-        })
+
         const deleteBtn = element.querySelector('.delete-btn');
         const editBtn = element.querySelector('.edit-btn');
         deleteBtn.addEventListener('click',deleteItem);
