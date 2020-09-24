@@ -163,7 +163,19 @@ function createListItem(id,value){
         const attr = document.createAttribute('data-id');
         attr.value = id;
         element.setAttributeNode(attr);
-        element.innerHTML = `<p class="title">${value}</p>
+        // element.innerHTML = `<p class="title">${value}</p>
+        // <div class="btn-container">
+        //   <!-- edit btn -->
+        //   <button type="button" class="edit-btn">
+        //     <i class="fas fa-edit"></i>
+        //   </button>
+        //   <!-- delete btn -->
+        //   <button type="button" class="delete-btn">
+        //     <i class="fas fa-trash"></i>
+        //   </button>
+        // </div>`;
+        if(document.body.className === "dark-mode"){
+             element.innerHTML = `<p class="title d">${value}</p>
         <div class="btn-container">
           <!-- edit btn -->
           <button type="button" class="edit-btn">
@@ -174,7 +186,37 @@ function createListItem(id,value){
             <i class="fas fa-trash"></i>
           </button>
         </div>`;
+        }
+        else{
+            element.innerHTML = `<p class="title">${value}</p>
+            <div class="btn-container">
+              <!-- edit btn -->
+              <button type="button" class="edit-btn">
+                <i class="fas fa-edit"></i>
+              </button>
+              <!-- delete btn -->
+              <button type="button" class="delete-btn">
+                <i class="fas fa-trash"></i>
+              </button>
+            </div>`;
+        }
+        const title =  element.querySelector('.title');
+        if(title.className === "title d"){
+            title.style.color = "#fff";
+        }
+        else{
+            title.style.color = "#222";
+        }
 
+        darkBtn.addEventListener('click',function(){
+            title.classList.toggle("d");
+            if(title.className === "title d"){
+                title.style.color = "#fff";
+            }
+            else{
+                title.style.color = "#222";
+            }
+        })
         const deleteBtn = element.querySelector('.delete-btn');
         const editBtn = element.querySelector('.edit-btn');
         deleteBtn.addEventListener('click',deleteItem);
