@@ -205,7 +205,7 @@ function createListItem(id,value){
             title.style.color = "#fff";
         }
         else{
-            title.style.color = "#222";
+            title.style.color = "#0cff08";
         }
 
         darkBtn.addEventListener('click',function(){
@@ -214,7 +214,7 @@ function createListItem(id,value){
                 title.style.color = "#fff";
             }
             else{
-                title.style.color = "#222";
+                title.style.color = "#0cff08";
             }
         })
         const deleteBtn = element.querySelector('.delete-btn');
