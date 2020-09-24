@@ -331,7 +331,7 @@ Grocery List
 }
 .grocery-form small{
   position: absolute;
- bottom: 1rem;
+ bottom: .5rem;
  right: 1.5rem;
  background: var(--clr-primary-8);
  padding: 3px 5px;
