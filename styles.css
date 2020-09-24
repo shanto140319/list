@@ -352,3 +352,53 @@ Grocery List
   background: var(--clr-primary-5);
   color: var(--clr-white);
 }
+
+.write-text{
+  text-align: center;
+  margin-top: 2rem;
+  font-family: inherit;
+  text-transform: capitalize;
+  letter-spacing: .2rem;
+}
+
+
+/* darkmode */
+.darkMode{
+  position: fixed;
+  top: 5%;
+  left: 10%;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: .2rem;
+}
+.dark{
+  height: 30px;
+  width: 30px;
+  background: #222;
+  border-radius: 50%;
+  display: flex;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-right: .4rem;
+ 
+  border: none;
+}
+.dark.dark-mode{
+  background: #fff;
+  color: #222;
+}
+.dark-mode{
+  background: #222;
+  color: #d4edda;
+}
+.grocery-form.dark-mode2 h3{
+  color: #d4edda;
+}
+.title.dark-mode2{
+  color: #d4edda;
+}
