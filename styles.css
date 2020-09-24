@@ -326,13 +326,13 @@ Grocery List
 .clear-btn:hover {
   color: var(--clr-red-dark);
 }
-.grocery-form{
+.section-center{
   position: relative;
 }
 .grocery-form small{
   position: absolute;
-  top: 0;
- right: 0;
+ bottom: 1rem;
+ right: 1.5rem;
  background: var(--clr-primary-8);
  padding: 3px 5px;
  border-radius: 5px;
