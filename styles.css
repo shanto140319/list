@@ -282,7 +282,7 @@ Grocery List
 }
 .title {
   margin-bottom: 0;
-  color: var(--clr-green-light);
+  color:#222;
   letter-spacing: 2px;
   transition: var(--transition);
 }
