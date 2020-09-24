@@ -282,7 +282,7 @@ Grocery List
 }
 .title {
   margin-bottom: 0;
-  color: var(--clr-grey-1);
+  color: var(--clr-green-light);
   letter-spacing: 2px;
   transition: var(--transition);
 }
@@ -397,8 +397,5 @@ Grocery List
   color: #d4edda;
 }
 .grocery-form.dark-mode2 h3{
-  color: #d4edda;
-}
-.title.dark-mode2{
   color: #d4edda;
 }
